@@ -6,9 +6,9 @@ var songData = [
     artist: "Aaliyah",
   },
   {
-    url: "https://s3-us-west-1.amazonaws.com/hr-mytunes/data/03+Age+Ain%27t+Nothing+But+A+Number.mp3",
-    title: "Age Ain't Nothing But A Number",
-    artist: "Aaliyah",
+    url: "http://www.amclassical.com/mp3/amclassical_prelude_in_c_major_bwv_846a.mp3",
+    title: "Prelude in C Major",
+    artist: "Johann Sebastian Bach",
   },
   {
     url: "https://s3-us-west-1.amazonaws.com/hr-mytunes/data/05+Hot+Like+Fire.mp3",

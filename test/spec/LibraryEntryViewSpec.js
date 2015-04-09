@@ -8,7 +8,10 @@ describe('LibraryEntryView', function() {
       url: 'example/url',
     });
     view = new LibraryEntryView({model: model});
+    view1 = new SongQueueEntryView({model: model});
     view.render();
+    view1.render();
+
   });
 
   // This spec passes already, but it's mutually exclusive with the one below.
@@ -16,7 +19,7 @@ describe('LibraryEntryView', function() {
   it ('plays clicked songs', function(){
     sinon.spy(SongModel.prototype, 'play');
 
-    view.$el.children().first().click();
+    view1.$el.children().first().click();
     expect(model.play).to.have.been.called;
 
     SongModel.prototype.play.restore();
