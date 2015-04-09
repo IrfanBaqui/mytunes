@@ -7,11 +7,11 @@ var SongQueueEntryView = Backbone.View.extend({
 
   events: {
     'click': function() {
-      this.model.play();
+      this.model.clicked();
     }
   },
 
   render: function(){
-    return this.$el.html(this.template(this.model.attributes));
+    return this.$el.html(this.template(this.model.attributes)).append((new SongQueueEntryPlayCountView({model:this.model})).render());
   }
 });
