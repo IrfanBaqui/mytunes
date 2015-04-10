@@ -2,8 +2,9 @@ var LibraryFormView = Backbone.View.extend({
 
   tagName: "div",
 
-  initialize: function() {
+  initialize: function(params) {
     this.render();
+    this.vent = params.vent;
   },
 
   events: {
@@ -11,7 +12,8 @@ var LibraryFormView = Backbone.View.extend({
   },
 
   createLibrary: function() {
-    this.trigger('createLibrary', this);
+    this.vent.trigger('createNewLibrary');
+    console.log('from createLibrary');
   },
 
   render: function() {
