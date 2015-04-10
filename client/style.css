@@ -49,7 +49,7 @@ tr:last-child td:first-child{
 
 
 tr:hover td{
-	
+
 }
 
 
@@ -63,8 +63,8 @@ tr:nth-child(even)    { background-color:#ffffff; }
 
 td{
 	vertical-align:middle;
-	
-	
+
+
 	border:1px solid #000000;
 	border-width:0px 1px 1px 0px;
 	text-align:left;
@@ -128,3 +128,12 @@ tr:first-child td:first-child{
 tr:first-child td:last-child{
 	border-width:0px 0px 1px 1px;
 }
+
+video {
+  width: 640;
+  height: 480;
+}
+
+
+
+

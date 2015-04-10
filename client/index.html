@@ -19,6 +19,7 @@
 
     <script src="views/AppView.js"></script>
     <script src="views/PlayerView.js"></script>
+    <script src="views/LibraryFormView.js"></script>
 
     <script src="views/LibraryView.js"></script>
     <script src="views/LibraryEntryView.js"></script>
@@ -40,6 +41,18 @@
 
         // put the view onto the screen
         $('body').append(appView.render());
+
+        var libraryName;
+
+        var getLibraryName = function() {
+            libraryName = $('#libraryName').val();
+        };
+
+        $('.lib_btn').click(function() {
+            getLibraryName();
+            console.log(libraryName);
+        });
+
       });
     </script>
   </body>
